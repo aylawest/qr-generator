@@ -1,0 +1,66 @@
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h4>About</h4>
+    <ul>
+      <p>Built with</p>
+      <li><i class="fa-brands fa-js"></i> JavaScript</li>
+      <li><img src="astro-icon-light.png"> Astro</li>
+      <li><i class="fa-brands fa-html5"></i> HTML</li>
+      <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+    </ul>
+    <ul>
+      <p>Deployed by</p>
+      <li><i class="fa-brands fa-js"></i> Netlify</li>
+    </ul>
+  </div>
+</section>
+
+<style>
+  #about {
+    color: var(--color-white);
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+  }
+
+  li {
+    padding: 2px 4px;
+    font-size: .7em;
+    background-color: var(--color-white-transparent);
+    border: var(--color-white-transparent-border);
+    color: var(--color-white);
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-xs);
+  }
+
+  li:hover {
+    transform: translateY(1px);
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    cursor: default;
+  }
+
+  img {
+    height: 11px;
+  }
+
+  h4 {
+    margin-bottom: 12px;
+  }
+
+  p {
+    color: var(--color-white);
+    opacity: .7;
+  }
+</style>

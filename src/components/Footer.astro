@@ -1,0 +1,90 @@
+---
+import Logo from "./Logo.astro";
+---
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="top-row">
+      <Logo />
+      <div class="code"> 
+        <a href="http://github.com/alyssaweiglein/qr-generator" target="_blank">
+          <i class="fa-solid fa-code"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="bottom-row">
+      <p>Made by <a href="http://arw.works" target="_blank">[ AW ]</a> | All rights reserved | &copy; 2023 &#8212; &infin;</p>
+      <div class="socials">
+        <ul>
+          <li><a href="mailto:contact@arw.works"><i class="fa-solid fa-envelope"></i></a></li>
+          <li><a href="http://github.com/alyssaweiglein" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="http://linkedin.com/in/alyssaweiglein" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    color: var(--color-white);
+    border-top: 1px solid rgba(255, 255, 255, 0.107);
+  }
+
+  .top-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 4px;
+  }
+
+  p {
+    font-size: .7em;
+  }
+
+  a {
+    color: var(--color-white);
+    font-weight: bold;
+  }
+
+  a:hover {
+    color: var(--color-accent-secondary);
+    transition: .2s;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 4px;
+  }
+
+  li {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .code a {
+    background-color: var(--color-white-transparent);
+    border: var(--color-white-transparent-border);
+    color: var(--color-white);
+    width: 24px;
+    height: 24px;
+    border-radius: var(--border-radius-xs);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .7em;
+  }
+
+</style>

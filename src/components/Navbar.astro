@@ -1,0 +1,55 @@
+---
+import Logo from "./Logo.astro";
+---
+<!-- NAV -->
+<nav aria-label="main-navigation">
+  <div class="container">
+    <div id="navbar">
+      <div id="logo-container">
+        <Logo />
+      </div>
+      <div id="links-container">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li>
+            <a href="http://github.com/alyssaweiglein" target="_blank">
+              <i class="fa-solid fa-code"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<style>
+  nav {
+    color: var(--color-white);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.107);
+  }
+
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 14px;
+  }
+
+  a {
+    color: var(--color-white);
+  }
+
+  a:hover {
+    color: var(--color-accent-secondary);
+    transition: .2s;
+  }
+
+  #links-container a {
+    font-size: .8em;
+  }
+</style>
